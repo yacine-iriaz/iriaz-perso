@@ -1,0 +1,11 @@
+master:
+    scheme: ftp
+    host: "ftp.cluster028.hosting.ovh.net"
+    port: 22
+    user: "iriazfrxei"
+    pass: "Iriaz110711"
+    check: true
+    path:
+        local: "deploy"
+        remote: "www/dev3/appvideo/"
+
