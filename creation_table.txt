@@ -25,6 +25,6 @@ serie_personnes ( id_episode [pk][fk], id_personne [pk][fk], id_fonction [pk][fk
 
 utilisateurs ( id_users [pk], nom, prenom ) ce sont juste les utilisateurs
 
-filmsVus ( id_filmsVus [pk], id_films [pk][fk] )
+filmsVus ( id_filmsVus [pk], id_films [pk][fk] ) pour les films vus
 
-seriesVues ( id_seriesVues [pk], id_episode [pk][fk] )
+seriesVues ( id_seriesVues [pk], id_episode [pk][fk] ) pour les series vues
