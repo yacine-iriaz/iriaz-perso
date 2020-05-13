@@ -1,0 +1,30 @@
+fonctions ( id_fonction [pk], nom_fonction ) pour stocker "Réalisateur", "Acteur", "Producteur", etc.
+
+personnes ( id_personne [pk], nom, prenom, date_naissance, etc. ) pour stocker "Brad Pitt", "Steven Spielberg", etc.
+
+genres ( id_genre [pk], nom_genre ) pour stocker "Action", "Comédie", "Science-fiction", etc.
+
+
+films ( id_film [pk], id_genre [pk][fk], titre_film, photo, date_sortie, synopsis, bande_annonce, duree_film ) pour stocker "Forest Gump", "Batman begins", etc.
+
+film_genres ( id_film [pk][fk], id_genre [pk][fk] ) pour relier les films à un ou plusieurs genres
+
+film_personnes ( id_film [pk][fk], id_personne [pk][fk], id_fonction [pk][fk] ) pour relier les films aux personnes concernées selon leur fonction
+
+
+series ( id_serie [pk], id_genre [pk][fk], titre_serie, photo, date_sortie, date_fin, synopsis, bande_annonce, duree_serie, liste_saison ) pour stocker "Game of thrones", "NCIS", etc.
+
+serie_genres ( id_serie [pk][fk], id_genre [pk][fk] ) pour relier les séries à un ou plusieurs genres
+
+saisons ( id_saison [pk], id_serie [pk][fk], numero_saison, nom_saison, nb_episode, liste_episode )
+
+episodes ( id_episode [pk], id_saison [pk][fk], titre_episode, photo_episode, numero_episode, date_diffusion, synopsis_episode, duree_episode, etc. )
+
+serie_personnes ( id_episode [pk][fk], id_personne [pk][fk], id_fonction [pk][fk] ) pour relier les séries (épisodes) aux personnes concernées selon leur fonction
+
+
+utilisateurs ( id_users [pk], nom, prenom ) ce sont juste les utilisateurs
+
+filmsVus ( id_filmsVus [pk], id_films [pk][fk] )
+
+seriesVues ( id_seriesVues [pk], id_episode [pk][fk] )
